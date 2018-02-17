@@ -1,5 +1,9 @@
 # Shuttle.Core.Specification
 
-Provides simple specifications.
+```
+PM> Install-Package Shuttle.Core.Specification
+```
 
-Visit the [documentation site](http://shuttle.github.io/shuttle-core/).
+
+Provides a simple `ISpecification` interface.
+
