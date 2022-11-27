@@ -9,9 +9,7 @@ namespace Shuttle.Core.Specification
 
         public Specification(Func<T, bool> function)
         {
-            Guard.AgainstNull(function, nameof(function));
-
-            _function = function;
+            _function = Guard.AgainstNull(function, nameof(function));
         }
 
         public bool IsSatisfiedBy(T candidate)
