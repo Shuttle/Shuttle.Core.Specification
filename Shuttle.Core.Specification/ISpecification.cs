@@ -1,7 +1,6 @@
-﻿namespace Shuttle.Core.Specification
+﻿namespace Shuttle.Core.Specification;
+
+public interface ISpecification<in T>
 {
-    public interface ISpecification<in T>
-    {
-        bool IsSatisfiedBy(T candidate);
-    }
+    bool IsSatisfiedBy(T candidate);
 }
